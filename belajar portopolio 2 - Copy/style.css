@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    padding-right: 40px;
+}
+body{
+    background-color: #2e0249;
+}
+.nav{
+    position: absolute;
+    height: 800px;
+    width:20%;
+    max-width: 230px;
+    background-color:#570A57;
+    margin: 0 10px 0 0;
+    opacity: 1;
+    padding: 30px;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+ul h1{
+    font-size: 20px;
+    color: aliceblue;
+    margin: 10px auto;
+}
+li{
+    color: #F806CC;
+    margin: 30px auto;
+    font-size: 130%;
+}
+li a{
+    color: #F806CC;
+}
+.isi{
+    display: block;
+    justify-content: space-evenly;
+    position: fixed;
+    opacity: 1;
+    left: 18%;
+    margin-left: 60px;
+    min-width: 80%;
+    max-width: 500px;
+    height: 100%;
+    padding: 60px;
+}
+.isi img{
+    margin: auto;
+    margin-top: 150px;
+    bottom: 30px;
+    height: 25%;
+    width: auto;
+    padding: 20px;
+}
+.isi h1{
+    width: 70%;
+    height: auto;
+    color: white;
+    font-size:30px;
+    left: 19%;
+    position: absolute;
+    font-family: 'Bebas Neue', cursive;
+    text-align: justify;
+}
+.isi h3{
+    color:white ;
+    font-family: cursive;
+    border: solid white ;
+    margin-left: 18%;
+    margin-right: 0;
+    margin-top: 100px;
+    margin-bottom: -50px;
+    width: 500px;
+    padding: 20px;
+    text-align: center;
+
+}
+h1 .span1::before{
+    content: '';
+    color: red;
+    animation: span1 infinite 10s;
+}
+@keyframes span1{
+    0%{
+        content: '     GAME THAT I PLAY';
+    }
+    40%{
+        content: '     MUSIC THAT I LISTEN';
+    }
+    55%{
+        content: '     ANIME THAT I WATCH';
+    }
+    90%{
+        content: '     ABOUT ME AND WEBSITE';
+    }
+    100%{
+        content: ' GAME THAT I PLAY';
+    }
+}
+@media screen and (max-width: 576px){
+    .nav{
+        width: 100%;
+        max-width: 500px;
+        height: 12%;
+        display: flexbox;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+    }
+    .nav ul{
+        flex-direction: row;
+    }
+    .nav li{
+        font-size: 80%;
+        margin-bottom: 30px;
+    }
+    .nav h1{
+        font-size: 110%;
+        width: 90%;
+        margin: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .isi{
+        left: 0;
+        margin-left: 0;
+        padding: 10px;
+        padding-top: 300px;
+        padding-left: 60px;
+    }
+    .isi h1{
+        margin-top: -220px;
+        margin-left: -19px;
+        font-size: 120%;
+        text-align: justify;
+    }
+    .isi img{
+        margin: auto;
+        margin-top: 0px;
+        bottom: 30px;
+        height: 20%;
+        width: auto;
+        padding: 0px;
+    }
+    .isi h3{
+        margin-left: 0;
+        padding: 10px;
+        font-family: cursive;
+        font-size: 60%;
+        text-align: left;
+        margin-right: 70px;
+        margin-top: -140px;
+        margin-bottom: 60px;
+        width: 250px;
+    }
+}
